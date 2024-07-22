@@ -1,0 +1,6 @@
+<launch>
+<!-- State estimator -->
+    <node name="state_estimator" pkg="state_estimate" type="state_estimate.py" output="screen">
+        <param name="position_topic" type="string" value="$(arg position_topic)"/>
+    </node>
+</launch>
